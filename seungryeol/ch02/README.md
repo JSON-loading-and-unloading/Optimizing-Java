@@ -126,7 +126,9 @@ https://haenny.tistory.com/410 (참고)
   - 각 스레드가 시간대별로 표시
 - 샘플러 및 프로파일러
   - cpu 및 메모리  사용률에 관한 단순 샘플링 결과가 표시
-![KakaoTalk_20230709_123254776](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/1589138b-168b-4a90-96ff-f8132ceb9e32)
+
+
+![KakaoTalk_20230709_123254776](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/ebf5cbe2-2642-4879-8ac5-45d1e6fb2ace)
 
 
 
