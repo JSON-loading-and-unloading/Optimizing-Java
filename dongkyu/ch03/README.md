@@ -198,3 +198,7 @@
     - 네이티브 메서드는 C 언어로 작성
     - 자바 네이티브 인터페이스(JNI)가 네이티브 메서드를 여느 자바 메서드처럼 엑세스할 수 있게 한다.
     - 즉 네이티브 메서드란 비교적 저수준 플랫폼 관심사를 처리한다.
+
+## 더 공부한 것
+- [OS 메모리 계층 구조](https://github.com/ldk980130/TIL/blob/main/os/memory/memory_hierarchy.md)
+- [컨텍스트 스위칭](https://github.com/ldk980130/TIL/blob/main/os/process/context-switching.md)
