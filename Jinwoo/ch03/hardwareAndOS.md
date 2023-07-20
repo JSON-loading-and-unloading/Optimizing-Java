@@ -157,3 +157,18 @@ $ \rightarrow $ 가상 환경 내에서 프로그램을 실행하는 것 자체�
 
 
 
+## 추가 공부 & 참고 자료
+1. 인터럽트와 시스템 콜
+
+    https://www.youtube.com/watch?v=M9ZrQX1UgAU&t=748s
+    https://www.youtube.com/watch?v=v30ilCpITnY&t=294s
+
+2. ARM vs X86
+
+    https://www.youtube.com/watch?v=G-fJJ-OHLDw
+
+
+3. 멀티태스킹, 멀티스레딩, 멀티프로세싱, 멀티프로그래밍
+
+    https://www.youtube.com/watch?v=QmtYKZC0lMU&t=957s
+https://www.youtube.com/watch?v=1grtWKqTn50&t=885s
