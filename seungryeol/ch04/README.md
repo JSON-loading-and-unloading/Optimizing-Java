@@ -162,3 +162,22 @@ JIT 컴파일 안 하기로 결정된 메서드<br>
 
 인간이 확률을 이해하는데 얼마나 서투른지 잘 보여주는 사례<br>
 '알려지지 않는 미지의 것'보다 '알려진 기지의 것'을 추구하는 인간 본연의 욕구에 관한 역설을 주장<br>
+
+<h2>부하 테스트</h2>
+
+Jmeter를 활용한 부하테스트 해보기<br>
+![세팅](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/9b8872e4-50fa-4abc-b896-bcc9fe497181)
+(세팅 이미지)<br>
+![쓰레드 그룹](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/96e646f8-99af-4d91-8a3b-6d4db7a268d3)
+(테스트 설정 이미지)<br>
+![결과 트리](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/23c54535-8381-458c-a67f-519c4fdcefdb)
+(결과 트리 이미지)<br>
+![요약보고서](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/c04057dc-034d-4cbd-8dad-369b84bc6d32)
+(쓰레드 그룹)<br>
+![tps](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/070bab03-3512-45ed-9dc0-bef1037efcef)
+( tps그래프 이미지)<br>
+
+
+
+
+
