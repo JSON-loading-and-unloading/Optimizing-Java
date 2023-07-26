@@ -177,7 +177,7 @@ Jmeter를 활용한 부하테스트 해보기<br>
 ![요약보고서](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/c04057dc-034d-4cbd-8dad-369b84bc6d32)
 (요약 보고서 이미지)<br>
 ![tps](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/070bab03-3512-45ed-9dc0-bef1037efcef)
-( tps그래프 이미지)<br>
+
 
 
 
