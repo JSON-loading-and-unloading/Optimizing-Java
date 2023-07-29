@@ -78,7 +78,31 @@ JMH 프레임워크는 상태를 제어하는 기능을 제공한다.<br>
 ![KakaoTalk_20230729_161327010](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/ecba62b2-a12c-40e8-8f6d-43536873ffaa)
 
 하지만, GC가 작동됐다...ㅠㅠ<br>
-=> 잘살펴야한다..<br>
+=> 잘살펴야한다..<br><br>
 
 
+<h2>JHM 성능 통계</h2>
+
+랜덤 오차 : 측정 오차 또는 무관계 요인이 어떤 상관관계 없이 결과에 미친다.<br>
+계통 오차 : 원인을 알 수 없는 요인이 상관관계 있는 형태로 측정에 영향을 미침.<br><br>
+
+※정확도가 높으면 계통 오차가 낮다.<br>
+※정밀도가 높으면 랜덤 오차가 낮다.<br>
+
+<h4>계통오차</h4>
+
+  ![KakaoTalk_20230729_164354413](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/6094832f-e035-48dd-9b41-9460d383615b)
+
+  1. 제일 위의 그래프를 볼 경우 선형 패턴이 증가되어 서버 리소스가 조금씩 소모되고 있다.<br>
+  이는 메모리 누수가 발생하거나, 어떤 스레드가 요청 처리 도중 다른 리소스를 점유하여 놔주질 않는 상황에서 주로 나타난다.<br>
+
+ 2. 다른 서비스 대부분 180밀리초 안팎의 일정한 응답 시간을 보인다.<br>
+     => 잘못된 테스터 설정으로 인한 발생<br>
+
+    
   
+<h4>랜덤오차</h4>
+
+![KakaoTalk_20230729_164354413_01](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/e400dbfa-6951-4e02-9283-e0e0c0e7c1a4)
+
+랜덤 오차의 근원은 오직 운영환경의 이유이다.<br>
