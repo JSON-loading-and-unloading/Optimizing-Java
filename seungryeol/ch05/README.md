@@ -106,3 +106,33 @@ JMH 프레임워크는 상태를 제어하는 기능을 제공한다.<br>
 ![KakaoTalk_20230729_164354413_01](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/e400dbfa-6951-4e02-9283-e0e0c0e7c1a4)
 
 랜덤 오차의 근원은 오직 운영환경의 이유이다.<br>
+
+
+<h4>허위상관</h4>
+
+![KakaoTalk_20230730_122634177](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/344a99e1-fc1d-49b9-969b-16f1b908a671)
+
+두 변수가 비슷하게 움직인다고 해서 이들 사이에 연결고리가 있다고 볼 수는 없다.<br>
+JVM과 성능 분석 영역에서는 그럴싸해 보이는 연결고리와 상관관계만 보고 측정값 간의 인과 관계를 넘겨짚지 않도록 조심해야한다.<br>
+
+
+<h2>비정규 통계학</h2>
+
+HdrHistogram을 통해 정교한 분석이 가능하다.<br>
+pom.xml에 의존성 추가<br>
+
+![KakaoTalk_20230730_122634177_01](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/72cec2b0-18c0-4379-aa78-87244b3e97f9)
+
+자바 성능 튜닝 중 측정한 값은 대부분 통계적으로 심한 비정규 분포를 나타낸다.<br>
+
+
+<h2>통계치 해석</h2>
+
+![KakaoTalk_20230730_124420136](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/1823f0ef-92c3-42c5-af3f-c098b420b543)
+
+빨간선 : 클라이언트 오류로 매핑되지 않은 URL을 클라이언트가 요청하면 웹 서버는 곧장 응답을 준다.<br>
+파란선 : 서버 에러로 장시간 처리하다가 (백엔드 리소스가 장시간 부하를 받거나 타임아웃에 걸려) 발생하는 편이다.<br>
+주황선 : 성공 요청으로 긴 꼬리형 분포를 보이지만, 실제로는 극댓값이 여럿인 다봉분포를 나타낸다.<br>
+
+=> 위 그래프처럼 측정값을 보다 유의미한 하위 구성 요소들로 분해하는 개념은 아주 유용하다.<br><br>
+
