@@ -157,5 +157,5 @@ JMH은 벤치마크에 영향을 줄 수 있는 최적화로부터 보호하기 
 데이터를 더 작은 집합으로 쪼개야 할 경우도 있다. 예를 들어 같은 성공 요청이라도 업데이트, 업로드를 하는 요청과 읽기 작업이 대부분인 요청은 전혀 다른 분포를 보일 것이다.
 
 ### 추가 공부한 자료
-https://ysjee141.github.io/blog/quality/java-benchmark/
+https://ysjee141.github.io/blog/quality/java-benchmark/ </pr>
 https://mong9data.tistory.com/131
