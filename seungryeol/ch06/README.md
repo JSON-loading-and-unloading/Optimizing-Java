@@ -18,6 +18,11 @@
     4. 할당 리스트를 순회 하면서 마크 비트가 세팅되지 않는 객체를 찾는다.
         - 힙에서 메모리를 회수해 프리 리스트에 되돌린다.  => 왜?
         - 할당 리스트에서 객체를 삭제한다.
+      
+     ※자바 힙(Heap) 영역에는 영 세대(Young Generation)와 올드 세대(Old Generation)로 나뉘며, 가비지 컬렉션 과정에서 사용되는 "가비지 할당 리스트(Garbage Allocation List)"는 
+ 영 세대 영역에 속합니다.</br>
+
+
 
    <h3>가비지 수집 용어</h3>
      <h4>STW</h4>
@@ -171,7 +176,7 @@ JVM은 에덴을 여러 버퍼로 나누어 각 애플리케이션 스레드가 
   마지막 200밀리초 이내에ㅔ 생성된 객체는 사망하지 않아 서바이버 s1으로 이동</br>
   또 4초 후 s2으로 이동해야하지만 이미 s1에서 객체 사망</br>
   =>s2객체 중 세대 나이가 1인 객체는 없다.</br>
-  
+  </br>
     
-   ![KakaoTalk_20230807_123545926](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/944da00c-725a-4044-9084-51dff9e49e77)
+   ![KakaoTalk_20230807_123545926](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/944da00c-725a-4044-9084-51dff9e49e77)</br>
 
