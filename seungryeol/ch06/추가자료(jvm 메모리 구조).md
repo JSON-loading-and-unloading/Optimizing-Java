@@ -61,6 +61,7 @@ JVM이 동작하고 클래스가 로드될 때 적재되서 프로그램이 종�
 
 
 5. Native method stack</br>
+![캡처4](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/ec1d283c-b640-47b9-8e6d-a8d230653ba6)
 
 네이티브 메서드 스택는 자바 코드가 컴파일되어 생성되는 바이트 코드가 아닌 실제 실행할 수 있는 기계어로 작성된 프로그램을 실행시키는 영역이다.</br>
 JIT 컴파일러에 의해 변환된 Native Code 역시 여기에서 실행이 된다. </br>
