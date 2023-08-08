@@ -80,7 +80,7 @@ JIT 컴파일러에 의해 변환된 Native Code 역시 여기에서 실행이 �
 
 ![캡처2](https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/106163272/7d90c600-0d40-4abb-8a60-de3d348baebc)
 
-정리 : 클래스 로더를 통해 메소드 영역에 클래스에 대한 데이터가 쌓이고 객체 생성 시 힙 영역 메소드 호출 시 스택 영역에 데이터가 쌓인다.
+정리 : 클래스 로더를 통해 메소드 영역에 클래스에 대한 데이터가 쌓이고 객체 생성 시 힙 영역 데이터가 쌓인다.
 
 참고 자료 : https://inpa.tistory.com/entry/JAVA-%E2%98%95-JVM-%EB%82%B4%EB%B6%80-%EA%B5%AC%EC%A1%B0-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%98%81%EC%97%AD-%EC%8B%AC%ED%99%94%ED%8E%B8
 https://steady-coding.tistory.com/305
