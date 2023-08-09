@@ -120,7 +120,7 @@ JMH가 그런 툴이다.
 
 * JMH는 벤치마크 코드에서 계산된 값을 반환하지 않아도 JVM에서 마치 사용하는 것처럼 인식하게 하는 Blackhole 방법을 제공한다.
 
-출처: https://ysjee141.github.io/blog/quality/java-benchmark/ [happs's doodle]
+참고 : https://ysjee141.github.io/blog/quality/java-benchmark/ [happs's doodle]
 
 ### 실제 테스트
 참고 : https://shirohoo.github.io/backend/java/2021-09-06-jmh-gradle/
@@ -181,7 +181,7 @@ HTTP 요청-응답 시간을 측정한 히스토그램
 : 매핑되지 않는 URL을 클라이언트가 요청하면 웹 서버는 곧장 응답을 준다.
 
 * 서버 오류
-: 장시간 처리하다가 발생하는 편이다.
+: 장시간 처리하다가(가령, 백엔드 리소스가 장시간 부하를 받거나 타임아웃에 걸려) 발생하는 편이다.
 
 * 성공 요청
 : 긴 꼬리형 분포를 보이지만, 실제로는 극댓값이 여럿인 다봉분포를 나타낸다.
