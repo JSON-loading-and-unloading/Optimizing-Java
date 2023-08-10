@@ -216,3 +216,4 @@
 ### 추가 자료
 - [GC 개요](https://github.com/ldk980130/TIL/blob/main/java/jvm/garbage-collector.md)
 - [GC 알고리즘](https://github.com/ldk980130/TIL/blob/main/java/jvm/gc-algorithm.md)
+- [이펙티브 자바 아이템 7 - 다 쓴 객체를 참조 해제하라](https://github.com/ldk980130/TIL/blob/main/java/effective-java/item-07.md)
