@@ -1,4 +1,4 @@
-# JVM의 코드 실행
+# OptimizingJava Chap9 JVM의 코드 실행
 
 ## 들어가며
 
