@@ -27,6 +27,7 @@ load 같은 옵코드 군에는 단축형이 있어 인수를 생략할 수 있�
 ### 바이트코드 유형
 
 1. 스택에 데이터를 넣고 빼는 옵코드로 구성된 load/store 카테고리
+
     <img width = "500" src="https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/98975580/95271a7b-df30-4ac2-9f75-af75fc9b752e">
     * lds vs. const 구별해야 한다.
         * lds : 현재 클래스의 상수 풀에 있는 상수를 로드하는 바이트코드
@@ -45,6 +46,7 @@ load 같은 옵코드 군에는 단축형이 있어 인수를 생략할 수 있�
     * jsr, ret 역시 흐름 제어 패밀리에 속한 바이트코드지만 자바 6 이후로 deprecated 되었다.
 
 3. 메서드 호출 바이트코드
+
     <img width = "500" src="https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/98975580/d6ce2a2a-647c-4587-96c1-fb2a3c9d9d33">
 
     * invokevirtual : 주로 인스턴스 메서드 호출
