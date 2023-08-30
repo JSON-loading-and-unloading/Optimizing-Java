@@ -29,6 +29,7 @@ load 같은 옵코드 군에는 단축형이 있어 인수를 생략할 수 있�
 1. 스택에 데이터를 넣고 빼는 옵코드로 구성된 load/store 카테고리
 
     <img width = "500" src="https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/98975580/95271a7b-df30-4ac2-9f75-af75fc9b752e">
+    
     * lds vs. const 구별해야 한다.
         * lds : 현재 클래스의 상수 풀에 있는 상수를 로드하는 바이트코드
         * const : 매개변수 없이 진짜 상수만 로드하는 옵코드
