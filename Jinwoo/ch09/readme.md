@@ -27,10 +27,10 @@ load 같은 옵코드 군에는 단축형이 있어 인수를 생략할 수 있�
 ### 바이트코드 유형
 
 1. 스택에 데이터를 넣고 빼는 옵코드로 구성된 load/store 카테고리
-<img width = "500" src="https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/98975580/95271a7b-df30-4ac2-9f75-af75fc9b752e">
-* lds vs. const 구별해야 한다.
-    * lds : 현재 클래스의 상수 풀에 있는 상수를 로드하는 바이트코드
-    * const : 매개변수 없이 진짜 상수만 로드하는 옵코드
+    <img width = "500" src="https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/98975580/95271a7b-df30-4ac2-9f75-af75fc9b752e">
+    * lds vs. const 구별해야 한다.
+        * lds : 현재 클래스의 상수 풀에 있는 상수를 로드하는 바이트코드
+        * const : 매개변수 없이 진짜 상수만 로드하는 옵코드
 
 2. 산술 바이트코드
 
@@ -39,20 +39,22 @@ load 같은 옵코드 군에는 단축형이 있어 인수를 생략할 수 있�
     <img width = "500" src="https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/98975580/2ca4c8b2-5601-47a4-a6fc-bcfea553ce1b">
 
 3. 흐름을 제어하는 바이트코드
-<img width = "500" src="https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/98975580/1476965c-70b9-4a12-8fc2-f21b9dc75af3">
 
-* jsr, ret 역시 흐름 제어 패밀리에 속한 바이트코드지만 자바 6 이후로 deprecated 되었다.
+    <img width = "500" src="https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/98975580/1476965c-70b9-4a12-8fc2-f21b9dc75af3">
+
+    * jsr, ret 역시 흐름 제어 패밀리에 속한 바이트코드지만 자바 6 이후로 deprecated 되었다.
 
 3. 메서드 호출 바이트코드
-<img width = "500" src="https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/98975580/d6ce2a2a-647c-4587-96c1-fb2a3c9d9d33">
+    <img width = "500" src="https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/98975580/d6ce2a2a-647c-4587-96c1-fb2a3c9d9d33">
 
-* invokevirtual : 주로 인스턴스 메서드 호출
-* invokeinterface : 자바 인터페이스에 선언된 메서드를 호출한 경우
-* invokespecial : 컴파일 타임에 디스패치할 메서드를 특정할 수 있는 경우
+    * invokevirtual : 주로 인스턴스 메서드 호출
+    * invokeinterface : 자바 인터페이스에 선언된 메서드를 호출한 경우
+    * invokespecial : 컴파일 타임에 디스패치할 메서드를 특정할 수 있는 경우
 
 4. 플랫폼 옵코드
 
     객체별로 힙 저장 공간을 새로 할당하거나, 고유 락을 다루는 명령어들이다.
+
     <img width = "500" src="https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/98975580/f63eada9-ab6e-4174-bbe4-c4ba2f535b94">
 
 ### 세이프포인트
@@ -65,6 +67,8 @@ load 같은 옵코드 군에는 단축형이 있어 인수를 생략할 수 있�
 가장 단순한 인터프리터는 switch 문이 포함된 while 루프 형태일 것이다.
 
 <img width = "500" src="https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/98975580/302bea68-4099-4d9b-97ec-d104e9bed7e4">
+
+<br>
 
 <img width = "500" src="https://github.com/JSON-loading-and-unloading/Optimizing-Java/assets/98975580/2a5af646-74d1-4270-b91d-09ef48d0b164">
 
